@@ -105,17 +105,50 @@
       margin: 30px 0 50px;
     }
 
-    .social a {
-      display: inline-block;
-      margin: 10px 10px;
-      padding: 10px 16px;
-      background-color: #0077cc;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-    }
+.social a {
+  position: relative;
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #0077cc, #005fa3);
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(0,119,204, 0.6); }
+  70% { box-shadow: 0 0 0 15px rgba(0,119,204, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0,119,204, 0); }
+}
+
+.social a:hover {
+  background: linear-gradient(135deg, #0099ff, #0077cc);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+.map-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.map-info h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #0077cc;
+}
+
+.map-info p {
+  margin: 5px 0 15px 0;
+  font-size: 16px;
+  color: #333;
+}
 
     .social a:hover {
       background-color: #005fa3;
@@ -127,27 +160,48 @@
     <img src="sspc.png" alt="SSPC Logo" class="logo" />
     <h1>Software Solution P.C.</h1>
     <!-- Κυκλική φωτογραφία -->
-    <img src="georgia1.jpg" alt="Φωτογραφία Προφίλ" class="profile-photo" />
+    <img src="panagiotis.jpg" alt="Φωτογραφία Προφίλ" class="profile-photo" />
   </div>
 
   <div class="card">
-    <p><strong>Όνομα:</strong> <span>Τζανετοπούλου Γεωργία</span></p>
-    <p><strong>Τηλέφωνο:</strong> <span><a href="tel:+306936756411">+30 6936 756411</a></span></p>
-    <p><strong>Θέση:</strong> <span>General Manager</span></p>
-    <p><strong>Ωράριο:</strong> <span>09:00 - 17:00</span></p>
-    <p><strong>Email:</strong> <span><a href="mailto:tzanetopoulou@sspc.gr">tzanetopoulou@sspc.gr</a></span></p>
+    <p><span><strong>Καπετανόπουλος Παναγιώτης</strong> </span></p>
+    <p><span><strong>Customs Development Team Leader</strong></span></p>
+    <p><span><strong><a href="tel:+306978758168">+30 6978 758168</a></strong></span></p>
+    <p><span><strong><a href="mailto:kapetanopoulos@sspc.gr">kapetanopoulos@sspc.gr</a></strong></span></p>
   </div>
   <!-- Social + vCard κουμπί -->
   <div class="social">
-    <a href="https://www.linkedin.com/in/georgia-tzanetopoulou-9295a719b/" target="_blank">🔗 LinkedIn</a>
-    <a href="georgia.vcf" download>📥 Αποθήκευση Επαφής</a>
+    <a href="https://www.linkedin.com/in/panagiotis-kapetanopoulos-140152165/" target="_blank">LinkedIn</a>
+    <a href="panagiotis.vcf" download>Αποθήκευση Επαφής</a>
   </div>
   <!-- Χάρτης -->
-  <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d100606.47320290284!2d23.707445108188324!3d38.00157335300039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x14a1bd5ab9611973%3A0x96194850f345c053!2sLeof.%20Mesogeion%20196%2C%20Cholargos%20155%2061!3m2!1d38.0016021!2d23.7898461!5e0!3m2!1sen!2sgr!4v1753865743158!5m2!1sen!2sgr" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   <!-- Εταιρικά στοιχεία + Χάρτης -->
+  <div class="map-info">
+    <h2>Software Solution P.C. – SSPC</h2>
+    <p>Λεωφόρος Μεσογείων 196, Χολαργός 155 61</p>
+  </div>
+  
 
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.2481367389136!2d23.787657!3d38.001600!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd5ab9611973%3A0x96194850f345c053!2sLeof.%20Mesogeion%20196%2C%20Cholargos%20155%2061!5e0!3m2!1sel!2sgr!4v1693865743158!5m2!1sel!2sgr&z=17" 
+    allowfullscreen 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
